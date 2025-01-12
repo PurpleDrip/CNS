@@ -1,0 +1,188 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.reviews {
+  position: relative;
+  top: 15%;
+}
+.reviews:hover {
+  animation-play-state: paused;
+}
+.card {
+  position: absolute;
+  left: 100%;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 10px 2px rgba(76, 48, 163, 0.2);
+  overflow-y: hidden;
+  padding: 2rem 2rem;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  animation: slide 40s linear infinite;
+  animation-delay: calc(var(--pos) * 5.71s);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.reviews:hover .card {
+  animation-play-state: paused;
+  filter: grayscale(1);
+}
+.reviews .card:hover {
+  filter: grayscale(0);
+  transform: scale(1.08);
+}
+.card p {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes slide {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -70rem;
+  }
+}
+
+/* autumn -user light
+dracula -user dark
+business  -organ dark
+lemonade -organ light */
+
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
